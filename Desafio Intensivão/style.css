@@ -1,0 +1,298 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+  --color-base-titles: hsl(320, 69%, 42%);
+  --color-base-paragraph: hsl(244, 38%, 28%);
+  --color-base-white: hsl(0, 0%, 100%);
+  font-family: 'Mulish', sans-serif;
+}
+
+
+body{
+  width: 43rem;
+  margin: 0 auto;
+
+  color: var(--color-base-paragraph);
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1{
+  font-size: 3.2rem;
+  color: var(--color-base-titles);
+  font-weight: 900;
+}
+
+header p{
+  font-size: 2rem;
+  color: var(--color-base-paragraph);
+}
+
+#arrow{
+  margin-top: 1.5rem;
+}
+
+main{
+  background: linear-gradient(to bottom, #343193, #302C63);
+
+  margin-top: 6rem;
+  padding: 0.5rem 0 0.5rem;
+
+}
+
+.principalOne:hover, .principalTwo:hover, .principalThree:hover{
+  transform: scale(1.1);
+}
+
+.principalOne, .principalTwo{
+  width: 35.2rem;
+  height: 33.7rem;
+
+  margin: 5rem auto;
+
+  background: var(--color-base-white);
+
+  border-radius: 2rem;
+}
+
+.principalThree{
+  width: 35.2rem;
+  height: 35.8rem;
+
+  margin: 5rem auto;
+
+  background: var(--color-base-white);
+
+  border-radius: 2rem;
+}
+
+
+.principalOne img, .principalTwo img, .principalThree img{
+  padding: 2.6rem 2.6rem 0 2.6rem;
+}
+
+.principalOne h2, .principalTwo h2, .principalThree h2{
+  font-size: 2.9rem;
+  color: var(--color-base-titles);
+  font-weight: 900;
+
+  padding: 1rem 0 0 2.6rem;
+}
+
+.principalOne p, .principalTwo p, .principalThree p{
+  font-size: 1.6rem;
+  
+  width: 26.5rem;
+
+  padding: 0.8rem 0 0 2.6rem;
+}
+
+fieldset{
+  border: none;
+}
+
+fieldset legend{
+  color: var(--color-base-titles);
+  font-size: 3.2rem;
+  font-weight: 900;
+
+  margin: 5rem 0 3rem 4rem;
+}
+
+.input-wrapper{
+  width: 35.2rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: 4rem;
+}
+
+.input-wrapper input{
+  height: 4.8rem;
+  color: var(--color-base-paragraph);
+  font-size: 1.6rem;
+
+  display: flex;
+  
+
+  border: 1px solid black;
+  border-radius: 1.6rem;
+
+  margin-bottom: 2rem;
+
+}
+
+.custom-input {
+  background-image: url(./assets/person.svg);
+  background-size: 2.4rem; 
+  background-repeat: no-repeat;
+  background-position: 1.4rem center;
+  padding-left: 4.5rem; 
+  border: 1px solid #ccc;
+
+  font-size: 1.6rem;
+  font-family: 'Mulish', sans-serif;
+}
+
+.custom-inputTwo{
+  background-image: url(./assets/arroba.svg);
+  background-size: 2.4rem; 
+  background-repeat: no-repeat;
+  background-position: 1.4rem center;
+  padding-left: 4.5rem; 
+  border: 1px solid #ccc;
+
+  font-size: 1.6rem;
+  font-family: 'Mulish', sans-serif;
+}
+
+.input-wrapper textarea{
+  height: 12.6rem;
+  color: var(--color-base-paragraph);
+  font-size: 1.6rem;
+
+  display: flex;
+  
+
+  border: 1px solid black;
+  border-radius: 1.6rem;
+
+  margin-bottom: 2rem;
+  padding: 1.2rem 1.6rem 1.6rem 1.6rem;
+
+}
+
+input:invalid{
+  border: 1px solid red;
+}
+
+section img{
+  display: none;
+}
+
+button{
+  width: 15rem;
+  height: 4.5rem;
+  color: var(--color-base-white);
+
+  background: linear-gradient(to bottom, #343193, #302C63);
+
+  border: none;
+  border-radius: 1.6rem;
+
+  padding: 1.6rem 1.6rem;
+  margin: 0 0 6rem 4rem;
+
+}
+
+footer{
+  height: 7.8rem;
+  font-size: 2rem;
+
+  color: var(--color-base-white);
+
+  text-align: center;
+
+  padding: 2.5rem 1.6rem;
+
+  background: linear-gradient(to bottom, #343193, #302C63);
+
+}
+
+button:hover{
+  background: linear-gradient(to bottom, #3934da, #1f1a6e);
+}
+
+@media(min-width: 1100px){
+  body{
+    width: 144rem;
+    height: 83.6rem;
+  }
+
+  header{
+    height: 83.6;
+    display: grid;
+    
+  }
+
+  .texto{
+    grid-column: 1/3;
+    grid-row: 1/5;
+    margin-left: 11rem;
+  }
+
+  .texto h1{
+    font-size: 5.8rem;
+  }
+  .texto p{
+    font-size: 3.2rem;
+  }
+
+  .image{
+    grid-column: 4/5;
+    grid-row: 1/5;
+  }
+
+  .image img{
+    width: 72rem;
+    height: 73rem;
+  }
+
+  .image_2{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    margin-left: 11rem;
+    
+  }
+
+  main{
+    display: flex;
+  }
+
+  .principalOne, .principalTwo, .principalThree{
+    height: 35.8rem;
+  }
+
+  .principalOne{
+    margin: 6.4rem 0 6.4rem 11rem;
+  }
+
+  .principalTwo{
+    margin: 6.4rem 0 6.4rem 5rem;
+  }
+
+  .principalThree{
+    margin: 6.4rem 0 6.4rem 5rem;
+  }
+
+  section img{
+    display: block;
+  }
+
+  section{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  form{
+    margin-left: 11rem;
+  }
+
+  fieldset legend{
+    font-size: 4.2rem;
+  }
+
+  .input-wrapper, textarea{
+    width: 59.2rem;
+  }
+
+  
+}
